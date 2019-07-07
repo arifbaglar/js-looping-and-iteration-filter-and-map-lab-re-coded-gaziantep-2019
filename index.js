@@ -15,9 +15,7 @@ return array.filter(driver => driver[key] === obj[key]);
 }}
 
 
-function exactMatchToList()(array,obj){
-  for (const key in obj){
-const result= array.filter(driver => driver[key] === obj[key]);
-const result2=result.map(isim=> isim.name);
-return result2;
-}}
+function exactMatchToList(array, obj){
+const list = exactMatch(array, obj)
+return list.map(driver => driver.name)
+}
