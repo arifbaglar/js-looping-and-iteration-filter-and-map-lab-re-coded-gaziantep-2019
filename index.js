@@ -9,8 +9,7 @@ function driverNamesWithRevenueOver(array,number){
   return result2;
 }
 
-function exactMatch(array,{key:value}){
-  const newarray=array.filter(arif=> arif.name==array.key);
-  return newarray;
-  
-}
+function exactMatch(array,obj){
+  for (const key in obj){
+return array.filter(driver => driver[key] === obj[key])
+}}
