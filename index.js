@@ -13,3 +13,9 @@ function exactMatch(array,obj){
   for (const key in obj){
 return array.filter(driver => driver[key] === obj[key]);
 }}
+
+
+function exactMatch(array,obj){
+  for (const key in obj){
+return array.filter(driver => driver[key] === obj[key]);
+}}
